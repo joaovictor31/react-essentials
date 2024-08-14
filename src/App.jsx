@@ -1,5 +1,5 @@
 import minhaImagem from './assets/react-core-concepts.png';
-import componentsImg from './assets/components.png';
+import {CORE_CONCEPTS} from './data.js';  {/* coloco entre chave pq não é um default padrão e tem o nome da constante*/}
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
@@ -38,12 +38,23 @@ function App() {
         <section id='core-concepts'>
         <h2>Core Concepts</h2>
         <ul>   {/* title, description e img vão ser as minhas props*/}
-          <CoreConcept title = "Components" 
-                      description = "The core UI building block"
-                      img = {componentsImg}/>
-          <CoreConcept/>
-          <CoreConcept/>
-          <CoreConcept/>
+          <CoreConcept title = {CORE_CONCEPTS[0].title}
+                      description = {CORE_CONCEPTS[0].description}
+                      img = {CORE_CONCEPTS[0].image}/>
+
+            {/* outra forma de fazer*/}
+            {/* <CoreConcept {...CORE_CONCEPTS[1]}/> */}
+          <CoreConcept title = {CORE_CONCEPTS[1].title}
+                      description = {CORE_CONCEPTS[1].description}
+                      img = {CORE_CONCEPTS[1].image}/> 
+
+          <CoreConcept title = {CORE_CONCEPTS[2].title}
+                      description = {CORE_CONCEPTS[2].description}
+                      img = {CORE_CONCEPTS[2].image}/>
+
+          <CoreConcept title = {CORE_CONCEPTS[3].title}
+                      description = {CORE_CONCEPTS[3].description}
+                      img = {CORE_CONCEPTS[3].image}/>
         </ul>
         </section>
     
