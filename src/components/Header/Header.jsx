@@ -1,4 +1,6 @@
-import minhaImagem from '../assets/react-core-concepts.png';
+import minhaImagem from '../../assets/react-core-concepts.png';
+import './Header.css'
+
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
 function genRandomInt(max) {

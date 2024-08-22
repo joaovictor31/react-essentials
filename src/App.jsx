@@ -1,6 +1,6 @@
 
 import {CORE_CONCEPTS} from './data.js';  {/* coloco entre chave pq não é um default padrão e tem o nome da constante*/}
-import Header from './components/Header.jsx';
+import Header from './components/Header/Header.jsx';
 import CoreConcept from './components/CoreConcept.jsx';
 
 function App() {
