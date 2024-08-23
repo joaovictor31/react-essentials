@@ -2,6 +2,7 @@
 import {CORE_CONCEPTS} from './data.js';  {/* coloco entre chave pq não é um default padrão e tem o nome da constante*/}
 import Header from './components/Header/Header.jsx';
 import CoreConcept from './components/CoreConcept.jsx';
+import TabButton from './components/TabButton.jsx';
 
 function App() {
   return (
@@ -29,6 +30,13 @@ function App() {
                       description = {CORE_CONCEPTS[3].description}
                       img = {CORE_CONCEPTS[3].image}/>
         </ul>
+        </section>
+
+        <section id='examples'>
+        <h2>Examples</h2>
+        <menu>
+          <TabButton>Components</TabButton> {/*Component Composition*/} {/*Children Prop vs Attribute Props*/}
+        </menu>
         </section>
     
       </main>
